@@ -2,6 +2,21 @@
 
 This repository contains a Python script for extracting audio features using FFT and recognizing audio samples as "Yes" or "No" based on their features.
 
+## How it works
+### Loading and Preprocessing Audio Files:
+Audio files are loaded, and the sampling frequency is determined. The librosa library is used to load the audio files.
+
+### FFT Calculation:
+The FFT (Fast Fourier Transform) of the audio files is calculated. FFT is the representation of a signal in the frequency domain, allowing for the analysis of the frequency components of the audio files.
+
+### Visualization of Frequency Components:
+The FFT results are plotted using the plot_spectrum function to visualize the amplitudes of the frequency components and their corresponding frequencies.
+
+### Feature Extraction:
+Features are extracted based on the FFT results of the audio files. In this example, the average of the first N frequency components is taken.
+
+### Recognition Algorithm:
+Using a simple threshold method, the features of the audio files are evaluated against a specific threshold.
 ## How to Use
 
 1. Place your audio files in the specified directory.
